@@ -1,13 +1,12 @@
-name: Deploy to GitHub Pages
+name: CI
 
 on:
   push:
     branches:
-      - main  # Trigger on push to main branch
+      - main
 
 jobs:
   build:
-    name: Build and Deploy
     runs-on: ubuntu-latest
 
     steps:
@@ -18,6 +17,9 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '16'
+
+      - name: Clear npm cache
+        run: npm cache clean --force
 
       - name: Install Dependencies
         run: npm install
