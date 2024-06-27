@@ -1,40 +1,105 @@
 let reviews = [
-    {
-        id: 1,
-        name: "John Doe",
-        job: "Web Developer",
-        image: "https://img.freepik.com/free-photo/portrait-young-indian-top-manager-t-shirt-tie-crossed-arms-smiling-white-isolated-wall_496169-1513.jpg?size=626&ext=jpg",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam."
-    },
-    {
-        id: 2,
-        name: "Jane Smith",
-        job: "Graphic Designer",
-        image: "https://img.freepik.com/free-photo/smiling-confident-businesswoman-posing-with-arms-folded_1262-20950.jpg?size=626&ext=jpg",
-        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-    },
-    {
-        id: 3,
-        name: "Bob Johnson",
-        job: "Marketing Manager",
-        image: "https://img.freepik.com/free-photo/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg?size=626&ext=jpg",
-        text: "Suspendisse potenti. In eleifend quam a odio. Sed venenatis bibendum nisl, sed ullamcorper metus facilisis quis."
-    },
-    {
-        id: 4,
-        name: "Alice Williams",
-        job: "Software Engineer",
-        image: "https://img.freepik.com/free-photo/smiling-young-male-professional-standing-with-arms-crossed-while-making-eye-contact-against-isolated-background_662251-838.jpg?size=626&ext=jpg",
-        text: "Vestibulum non justo eu odio fermentum ultrices eget vitae ipsum. Phasellus eu erat eget metus dictum tincidunt vel id libero."
-    },
-    {
-        id: 5,
-        name: "Charlie Brown",
-        job: "UX Designer",
-        image: "https://img.freepik.com/free-photo/writing-down-plan_1098-15897.jpg?size=626&ext=jpg&ga=GA1.1.97252779.1704097288&semt=sph",
-        text: "Duis a enim id sapien gravida eleifend. Nullam aliquam, tellus quis hendrerit euismod, odio ex vulputate justo, eget bibendum arcu dui sit amet quam."
-    }
-
+  {
+    "id": 1,
+    "category": "Shayri",
+    "shayari": "शदीद प्यास थी फिर भी छूआ न पानी को, मैं देखता रहा दरिया तिरी रवानी को।"
+  },
+  {
+    "id": 2,
+    "category": "Shayri",
+    "shayari": "जहां में होने को ऐ दोस्त यूँ तो सब होगा, तिरे लबों पे मिरे लब हों ऐसा कब होगा।"
+  },
+  {
+    "id": 3,
+    "category": "Shayri",
+    "shayari": "जुस्तुजू जिस की थी उस को तो ना पाया हमने, इस बहाने से मगर देख ली दुनिया हमने।"
+  },
+  {
+    "id": 4,
+    "category": "Shayri",
+    "shayari": "सियाह रात नहीं लेती नाम ढलने का, यही तो वक्त है सूरज तिरे निकलने का।"
+  },
+  {
+    "id": 5,
+    "category": "Shayri",
+    "shayari": "शिकवा कोई दरिया की रवानी से नहीं है, रिश्ता ही मेरी प्यास का पानी से नहीं है।"
+  },
+  {
+    "id": 6,
+    "category": "Shayri",
+    "shayari": "क्या कोई नई बात नजर आती है हम में, आईना हमें देख के हैरान सा क्यूँ है।"
+  },
+  {
+    "id": 7,
+    "category": "Shayri",
+    "shayari": "घर की तामीर तसव्वुर ही में हो सकती है, अपने नक्शे के मुताबिक ये ज़मीं कुछ कम है।"
+  },
+  {
+    "id": 8,
+    "category": "Shayri",
+    "shayari": "ये क्या है मोहब्बत में तो ऐसा नहीं होता, मैं तुझ से जुदा हो के भी तन्हा नहीं होता।"
+  },
+  {
+    "id": 9,
+    "category": "Shayri",
+    "shayari": "पहले नहाई ओस में फिर आँसुओं में रात, यूँ बूँद बूँद उतरी हमारे घरों में रात।"
+  },
+  {
+    "id": 10,
+    "category": "Shayri",
+    "shayari": "इक बूँद ज़हर के लिए फैला रहे हो हाथ, देखो कभी ख़ुद अपने बदन को निचोड़ के।"
+  },
+  {
+    "id": 11,
+    "category": "Shayri",
+    "shayari": "या तेरे अलावा भी किसी शै की तलब है, या अपनी मोहब्बत पे भरोसा नहीं हमको।"
+  },
+  {
+    "id": 12,
+    "category": "Shayri",
+    "shayari": "सभी को ग़म है समुंदर के खुश्क होने का, की खेल खत्म हुआ कश्तियाँ डूबने का।"
+  },
+  {
+    "id": 13,
+    "category": "Shayri",
+    "shayari": "अब रात की दीवार को ढाना है ज़रूरी, ये काम मगर मुझ से अकेले नहीं होगा।"
+  },
+  {
+    "id": 14,
+    "category": "Shayri",
+    "shayari": "उम्र का लम्बा हिस्सा कर के दानाई के नाम, हम भी अब ये सोच रहे हैं पागल हो जाएं।"
+  },
+  {
+    "id": 15,
+    "category": "Shayri",
+    "shayari": "जम.आ करते रहे जो अपने को ज़र्रा ज़र्रा, वो ये क्या जानें बिखरने में सुकून कितना है।"
+  },
+  {
+    "id": 16,
+    "category": "Shayri",
+    "shayari": "आँख की एक हसरत थी कि बस पूरी हुई, आँसुओं में भीग जाने की हवस पूरी हुई।"
+  },
+  {
+    "id": 17,
+    "category": "Shayri",
+    "shayari": "ये जब है कि इक ख़्वाब से रिश्ता है हमारा, दिन ढलते ही दिल डूबने लगता है हमारा।"
+  },
+  {
+    "id": 18,
+    "category": "Shayri",
+    "shayari": "आसमां कुछ भी नहीं अब तेरे करने के लिए, मैंने सब तय्यारियाँ कर ली हैं मरने के लिए।"
+  },
+  {
+    "id": 19,
+    "category": "Shayri",
+    "shayari": "तू कहाँ है तुझ से इक निस्बत थी मेरी जात को, कब से पलकों पर उठाए फिर रहा हूँ रात को।"
+  },
+  {
+    "id": 20,
+    "category": "Shayri",
+    "shayari": "आँखों में तेरी देख रहा हूँ मैं अपनी शक्ल, ये कोई वाहमा ये कोई ख़्वाब तो नहीं।"
+  }
 ];
+  
 
 export default reviews

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Card from "./Card";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
+import Tts from "./Tts";
+
 const Testimonial = (props) => {
   let reviews = props.reviews;
 
@@ -31,6 +33,7 @@ const Testimonial = (props) => {
     console.log(index);
   }
 
+  
   return (
     <div className="flex justify-center items-center text-center">
       <div className="bg-white rounded-sm flex flex-col items-center  w-[500px]">
@@ -43,9 +46,14 @@ const Testimonial = (props) => {
             <FaChevronRight />
           </button>
         </div>
-        <div className="bg-purple-400 text-white font-semibold p-2 rounded-md mb-4 hover:bg-purple-300">
-          <button onClick={surprise}>Surprise Me</button>
-        </div>
+        <div className="">
+        <div className="flex items-center gap-5">
+          <button className="bg-purple-400 text-white font-semibold p-2 rounded-md mb-4 hover:bg-purple-300"  onClick={surprise}>Once More</button>
+         <div className="bg-purple-400 text-white font-semibold p-2 rounded-md mb-4 hover:bg-purple-300">
+          <Tts  review={reviews[index]}/>
+         </div>
+        
+      </div></div>
       </div>
     </div>
   );
