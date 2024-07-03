@@ -1,18 +1,20 @@
-import reviews from "./data"
-import Heading from "./Component/Heading"
-import Testomonial from "./Component/Testomonial"
+import reviews from "./data";
+import Heading from "./Component/Heading";
+import Testomonial from "./Component/Testomonial";
 
 const App = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-screen bg-slate-400">
-    <div >
-      <Heading/>
+    <div className=" bg-slate-400">
+      <div className="flex m-auto p-5 h-screen flex-col justify-center items-center w-screen">
+        <div>
+          <Heading />
+        </div>
+        <div>
+          <Testomonial reviews={reviews} />
+        </div>
+      </div>{" "}
     </div>
-    <div>
-      <Testomonial reviews={reviews}/>
-    </div>
-    </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

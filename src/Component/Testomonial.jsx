@@ -33,27 +33,36 @@ const Testimonial = (props) => {
     console.log(index);
   }
 
-  
+  const clickhandler = () => {
+    surprise();
+    sound(reviews[index]);
+  };
+
   return (
-    <div className="flex justify-center items-center text-center">
-      <div className="bg-white rounded-sm flex flex-col items-center  w-[500px]">
+    <div className="flex justify-center items-center text-center  ">
+      <div className="bg-white rounded-md flex flex-col items-center sm:h-3/4 sm:w-3/4 ">
         <Card review={reviews[index]} />
         <div className="text-purple-400 flex justify-between gap-4 p-3">
           <button onClick={leftShift} className="hover:text-purple-300">
             <FaChevronLeft />
           </button>
-          <button onClick={rightShift}  className="hover:text-purple-300">
+          <button onClick={rightShift} className="hover:text-purple-300">
             <FaChevronRight />
           </button>
         </div>
         <div className="">
-        <div className="flex items-center gap-5">
-          <button className="bg-purple-400 text-white font-semibold p-2 rounded-md mb-4 hover:bg-purple-300"  onClick={surprise}>Once More</button>
-         <div className="bg-purple-400 text-white font-semibold p-2 rounded-md mb-4 hover:bg-purple-300">
-          <Tts  review={reviews[index]}/>
-         </div>
-        
-      </div></div>
+          <div className="flex items-center gap-5">
+            <button
+              className="bg-purple-400 text-white font-semibold p-2 rounded-md mb-4 hover:bg-purple-300"
+              onClick={clickhandler}
+            >
+              Once More
+            </button>
+            <div className="bg-purple-400 text-white font-semibold p-2 rounded-md mb-4 hover:bg-purple-300">
+              <Tts review={reviews[index]} />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
